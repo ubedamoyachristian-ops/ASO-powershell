@@ -41,6 +41,7 @@ foreach ($u in $usuarios) {
 
     Set-Acl $userPath $acl
 
-    $homeDir = "\\Empresa-dc1\Empresa_users$\$samAccount"
+    $homeDir = "\\$env:COMPUTERNAME\Empresa_users$\$samAccount"
     Set-ADUser -Identity $samAccount -ScriptPath "carpetas.bat" -HomeDrive "Z:" -HomeDirectory $homeDir
+
 }
