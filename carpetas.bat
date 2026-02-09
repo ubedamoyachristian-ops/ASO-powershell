@@ -1,0 +1,1 @@
+powershell New-SmbMapping -LocalPath 'Y:' -RemotePath '\\WIN-7B6PU35SQJI\Empresa'
